@@ -17,10 +17,16 @@
     </svg>
     <ul>
       <li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
-        <a href="/">Home</a>
+        <a href="/">Top</a>
+      </li>
+      <li aria-current={$page.url.pathname === "/library" ? "page" : undefined}>
+        <a href="/library">一覧</a>
+      </li>
+      <li aria-current={$page.url.pathname === "/my-page" ? "page" : undefined}>
+        <a href="/my-page" target="_self">マイページ</a>
       </li>
       <li aria-current={$page.url.pathname === "/about" ? "page" : undefined}>
-        <a href="/about">About</a>
+        <a href="/about">このサイトについて</a>
       </li>
     </ul>
     <svg viewBox="0 0 2 3" aria-hidden="true">
